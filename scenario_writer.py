@@ -17,7 +17,6 @@ class ScenarioWriter:
     
     def generate_scenario(self, input_data):
         icp_type = input_data.get("icp_type")
-        episode_title = input_data.get("episode_title", "Workplace Challenge")
         milestone_code = input_data.get("milestone_code", "M01")
         skill_target = input_data.get("skill_target", "communication")
         language = input_data.get("language", "en")
@@ -28,7 +27,7 @@ class ScenarioWriter:
             raise ValueError(f"Invalid icp_type: {icp_type}")
         
         user_prompt = build_user_prompt(
-            icp_type, episode_title, milestone_code, skill_target, language
+            icp_type, milestone_code, skill_target, language
         )
         
         try:

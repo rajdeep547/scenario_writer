@@ -15,7 +15,7 @@ def run_all_tests():
     for i, test_input in enumerate(test_inputs, 1):
         print(f"\n[Test {i}/{len(test_inputs)}]")
         print(f"ICP: {test_input['icp_type']}, Language: {test_input['language']}")
-        print(f"Episode: {test_input['episode_title']}")
+        print(f"Milestone: {test_input['milestone_code']}, Skill: {test_input['skill_target']}")
         print("-" * 40)
         
         try:

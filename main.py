@@ -16,7 +16,6 @@ def main():
             
             sample_input = {
                 "icp_type": "high_wage",
-                "episode_title": "The Missing Documentation",
                 "milestone_code": "M01",
                 "skill_target": "technical_communication",
                 "language": "en"
@@ -36,14 +35,12 @@ def main():
         print("-" * 40)
         
         icp_type = input("ICP Type (high_wage/low_wage): ").strip()
-        episode_title = input("Episode Title: ").strip()
         milestone_code = input("Milestone Code (M01-M07): ").strip()
         skill_target = input("Skill Target: ").strip()
         language = input("Language (en/hi): ").strip()
         
         input_data = {
             "icp_type": icp_type,
-            "episode_title": episode_title,
             "milestone_code": milestone_code,
             "skill_target": skill_target,
             "language": language

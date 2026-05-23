@@ -26,7 +26,7 @@ Output JSON structure:
   "transfer_targets": ["real-world skill 1", "real-world skill 2"]
 }"""
 
-def build_user_prompt(icp_type, episode_title, milestone_code, skill_target, language):
+def build_user_prompt(icp_type, milestone_code, skill_target, language):
     if icp_type == "high_wage":
         context_guide = """
 CONTEXT: HIGH-WAGE USER (Engineering student → Software Engineer)
@@ -54,7 +54,6 @@ CONTEXT: LOW-WAGE USER (Gig worker → Data entry / office job)
 
 Now generate a scenario with these parameters:
 - ICP Type: {icp_type}
-- Episode Title: {episode_title}
 - Milestone Code: {milestone_code}
 - Skill Target: {skill_target}
 

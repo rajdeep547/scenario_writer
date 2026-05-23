@@ -1,14 +1,106 @@
 test_inputs = [
+    # ===== YOUR CUSTOM TEST CASES =====
     
-    {"icp_type": "high_wage", "episode_title": "Missed Deadline", "milestone_code": "M01", "skill_target": "communication", "language": "en"},
-    {"icp_type": "high_wage", "episode_title": "Code Review", "milestone_code": "M02", "skill_target": "technical", "language": "en"},
-    {"icp_type": "high_wage", "episode_title": "Team Conflict", "milestone_code": "M03", "skill_target": "collaboration", "language": "en"},
-    {"icp_type": "high_wage", "episode_title": "Client Meeting", "milestone_code": "M04", "skill_target": "presentation", "language": "hi"},
-    {"icp_type": "high_wage", "episode_title": "Production Bug", "milestone_code": "M05", "skill_target": "problem_solving", "language": "en"},
-
-    {"icp_type": "low_wage", "episode_title": "Angry Customer", "milestone_code": "M01", "skill_target": "patience", "language": "hi"},
-    {"icp_type": "low_wage", "episode_title": "Excel Mistake", "milestone_code": "M02", "skill_target": "accuracy", "language": "hi"},
-    {"icp_type": "low_wage", "episode_title": "Late Delivery", "milestone_code": "M03", "skill_target": "time_management", "language": "en"},
-    {"icp_type": "low_wage", "episode_title": "Team Pressure", "milestone_code": "M04", "skill_target": "confidence", "language": "hi"},
-    {"icp_type": "low_wage", "episode_title": "Training Session", "milestone_code": "M05", "skill_target": "learning", "language": "en"}
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M03",
+        "skill_target": "stakeholder_communication",
+        "language": "en"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M02",
+        "skill_target": "customer_handling",
+        "language": "hi"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M06",
+        "skill_target": "deadline_management",
+        "language": "en"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M03",
+        "skill_target": "customer_conflict_handling",
+        "language": "hi"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M02",
+        "skill_target": "handling_workplace_pressure",
+        "language": "hi"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M03",
+        "skill_target": "cross_team_collaboration",
+        "language": "en"
+    },
+    
+    # ===== STANDARD HIGH_WAGE TESTS (M01-M07) =====
+    
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M01",
+        "skill_target": "basic_communication",
+        "language": "en"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M02",
+        "skill_target": "time_management",
+        "language": "en"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M04",
+        "skill_target": "stakeholder_management",
+        "language": "hi"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M05",
+        "skill_target": "technical_leadership",
+        "language": "en"
+    },
+    {
+        "icp_type": "high_wage",
+        "milestone_code": "M07",
+        "skill_target": "strategic_decision_making",
+        "language": "hi"
+    },
+    
+    # ===== STANDARD LOW_WAGE TESTS (M01-M07) =====
+    
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M01",
+        "skill_target": "basic_customer_service",
+        "language": "hi"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M04",
+        "skill_target": "team_work",
+        "language": "hi"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M05",
+        "skill_target": "supervisory_skills",
+        "language": "en"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M06",
+        "skill_target": "training_others",
+        "language": "hi"
+    },
+    {
+        "icp_type": "low_wage",
+        "milestone_code": "M07",
+        "skill_target": "operations_management",
+        "language": "en"
+    }
 ]
