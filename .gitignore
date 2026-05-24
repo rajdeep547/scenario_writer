@@ -1,15 +1,6 @@
-"# Environment variables" 
-".env" 
-"" 
-"# Python" 
-"__pycache__/" 
-"*.pyc" 
-"venv/" 
-"" 
-"# Node" 
-"node_modules/" 
-"frontend/node_modules/" 
-"" 
-"# Test results" 
-"test_results_*.json" 
-"output_scenario.json" 
+.env
+__pycache__/
+node_modules/
+venv/
+*.pyc
+test_results_*.json
