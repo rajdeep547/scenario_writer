@@ -1,0 +1,994 @@
+[
+  {
+    "test_id": 1,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M03",
+      "skill_target": "stakeholder_communication",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 2,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M02",
+      "skill_target": "customer_handling",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 3,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M06",
+      "skill_target": "deadline_management",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 4,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M03",
+      "skill_target": "customer_conflict_handling",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 5,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M02",
+      "skill_target": "handling_workplace_pressure",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 6,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M03",
+      "skill_target": "cross_team_collaboration",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 7,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M01",
+      "skill_target": "basic_communication",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 8,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M02",
+      "skill_target": "time_management",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 9,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M04",
+      "skill_target": "stakeholder_management",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "बैंगलोर कार्यालय",
+        "time": "सुबह 10 बजे",
+        "context": "साप्ताहिक स्टैंडअप मीटिंग"
+      },
+      "characters": [
+        {
+          "name": "रिया",
+          "role": "सॉफ्टवेयर डेवलपर",
+          "mood": "तनावग्रस्त"
+        },
+        {
+          "name": "राजेश",
+          "role": "टेक लीड",
+          "mood": "निराश"
+        }
+      ],
+      "antagonist_opening_line": "रिया, तुम्हारा फीचर दो दिन लेट है, पूरी टीम तुम्हारा इंतज़ार कर रही है",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सफाई देना",
+          "philosophy": "स्थिति स्पष्ट करने से ट्रस्ट बनता है"
+        },
+        {
+          "id": "chip2",
+          "label": "नई डेडलाइन देना",
+          "philosophy": "जवाबदेही दिखाता है"
+        },
+        {
+          "id": "chip3",
+          "label": "मदद मांगना",
+          "philosophy": "कमजोरी नहीं, टीमवर्क दिखाता है"
+        }
+      ],
+      "success_criteria": [
+        "डेडलाइन पर सहमति",
+        "टीम का भरोसा बना रहे"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 10,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M05",
+      "skill_target": "technical_leadership",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Bangalore office",
+        "time": "10 AM",
+        "context": "Weekly standup meeting"
+      },
+      "characters": [
+        {
+          "name": "Riya",
+          "role": "Software Developer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Rajesh",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        }
+      ],
+      "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Explain the blocker",
+          "philosophy": "Transparency builds trust"
+        },
+        {
+          "id": "chip2",
+          "label": "Propose new deadline",
+          "philosophy": "Shows accountability"
+        },
+        {
+          "id": "chip3",
+          "label": "Ask for help",
+          "philosophy": "Teamwork over ego"
+        }
+      ],
+      "success_criteria": [
+        "Agree on new deadline",
+        "Maintain team trust"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 11,
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M07",
+      "skill_target": "strategic_decision_making",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "बैंगलोर कार्यालय",
+        "time": "सुबह 10 बजे",
+        "context": "साप्ताहिक स्टैंडअप मीटिंग"
+      },
+      "characters": [
+        {
+          "name": "रिया",
+          "role": "सॉफ्टवेयर डेवलपर",
+          "mood": "तनावग्रस्त"
+        },
+        {
+          "name": "राजेश",
+          "role": "टेक लीड",
+          "mood": "निराश"
+        }
+      ],
+      "antagonist_opening_line": "रिया, तुम्हारा फीचर दो दिन लेट है, पूरी टीम तुम्हारा इंतज़ार कर रही है",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सफाई देना",
+          "philosophy": "स्थिति स्पष्ट करने से ट्रस्ट बनता है"
+        },
+        {
+          "id": "chip2",
+          "label": "नई डेडलाइन देना",
+          "philosophy": "जवाबदेही दिखाता है"
+        },
+        {
+          "id": "chip3",
+          "label": "मदद मांगना",
+          "philosophy": "कमजोरी नहीं, टीमवर्क दिखाता है"
+        }
+      ],
+      "success_criteria": [
+        "डेडलाइन पर सहमति",
+        "टीम का भरोसा बना रहे"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 50,
+        "clarity": 65,
+        "strategy": 55,
+        "outcome": 50
+      },
+      "transfer_targets": [
+        "deadline management",
+        "team communication"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 12,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M01",
+      "skill_target": "basic_customer_service",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 13,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M04",
+      "skill_target": "team_work",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 14,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M05",
+      "skill_target": "supervisory_skills",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Customer support center",
+        "time": "5 PM",
+        "context": "Customer escalated a complaint"
+      },
+      "characters": [
+        {
+          "name": "Arjun",
+          "role": "Delivery Partner",
+          "mood": "anxious"
+        },
+        {
+          "name": "Priya",
+          "role": "Supervisor",
+          "mood": "serious"
+        }
+      ],
+      "antagonist_opening_line": "Arjun, a customer complained about you. Tell me what happened.",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Be honest",
+          "philosophy": "Honesty resolves conflicts"
+        },
+        {
+          "id": "chip2",
+          "label": "Apologize",
+          "philosophy": "Apology shows maturity"
+        },
+        {
+          "id": "chip3",
+          "label": "Offer solution",
+          "philosophy": "Action fixes problems"
+        }
+      ],
+      "success_criteria": [
+        "Resolve complaint",
+        "Maintain supervisor trust"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 15,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M06",
+      "skill_target": "training_others",
+      "language": "hi"
+    },
+    "output": {
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "शाम 5 बजे",
+        "context": "ग्राहक ने एस्केलेशन किया"
+      },
+      "characters": [
+        {
+          "name": "अर्जुन",
+          "role": "डिलीवरी पार्टनर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "प्रिया",
+          "role": "सुपरवाइज़र",
+          "mood": "गंभीर"
+        }
+      ],
+      "antagonist_opening_line": "अर्जुन, कस्टमर ने तुम्हारी शिकायत की है, बताओ क्या हुआ?",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "सच बताना",
+          "philosophy": "ईमानदारी से समस्या हल होती है"
+        },
+        {
+          "id": "chip2",
+          "label": "माफी मांगना",
+          "philosophy": "गलती मानना बड़प्पन है"
+        },
+        {
+          "id": "chip3",
+          "label": "समाधान देना",
+          "philosophy": "प्रोएक्टिव बनना अच्छा है"
+        }
+      ],
+      "success_criteria": [
+        "शिकायत का समाधान",
+        "सुपरवाइज़र का भरोसा"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  },
+  {
+    "test_id": 16,
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M07",
+      "skill_target": "operations_management",
+      "language": "en"
+    },
+    "output": {
+      "scene": {
+        "setting": "Customer support center",
+        "time": "5 PM",
+        "context": "Customer escalated a complaint"
+      },
+      "characters": [
+        {
+          "name": "Arjun",
+          "role": "Delivery Partner",
+          "mood": "anxious"
+        },
+        {
+          "name": "Priya",
+          "role": "Supervisor",
+          "mood": "serious"
+        }
+      ],
+      "antagonist_opening_line": "Arjun, a customer complained about you. Tell me what happened.",
+      "strategy_chips": [
+        {
+          "id": "chip1",
+          "label": "Be honest",
+          "philosophy": "Honesty resolves conflicts"
+        },
+        {
+          "id": "chip2",
+          "label": "Apologize",
+          "philosophy": "Apology shows maturity"
+        },
+        {
+          "id": "chip3",
+          "label": "Offer solution",
+          "philosophy": "Action fixes problems"
+        }
+      ],
+      "success_criteria": [
+        "Resolve complaint",
+        "Maintain supervisor trust"
+      ],
+      "rubric": {
+        "communication": 55,
+        "composure": 45,
+        "clarity": 60,
+        "strategy": 50,
+        "outcome": 45
+      },
+      "transfer_targets": [
+        "customer handling",
+        "problem solving"
+      ]
+    },
+    "status": "PASSED"
+  }
+]

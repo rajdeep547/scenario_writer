@@ -1,0 +1,52 @@
+{
+  "scene": {
+    "setting": "Bangalore office",
+    "time": "10 AM",
+    "context": "Weekly standup meeting"
+  },
+  "characters": [
+    {
+      "name": "Riya",
+      "role": "Software Developer",
+      "mood": "stressed"
+    },
+    {
+      "name": "Rajesh",
+      "role": "Tech Lead",
+      "mood": "frustrated"
+    }
+  ],
+  "antagonist_opening_line": "Riya, your feature is 2 days late, the whole team is waiting on you",
+  "strategy_chips": [
+    {
+      "id": "chip1",
+      "label": "Explain the blocker",
+      "philosophy": "Transparency builds trust"
+    },
+    {
+      "id": "chip2",
+      "label": "Propose new deadline",
+      "philosophy": "Shows accountability"
+    },
+    {
+      "id": "chip3",
+      "label": "Ask for help",
+      "philosophy": "Teamwork over ego"
+    }
+  ],
+  "success_criteria": [
+    "Agree on new deadline",
+    "Maintain team trust"
+  ],
+  "rubric": {
+    "communication": 60,
+    "composure": 50,
+    "clarity": 65,
+    "strategy": 55,
+    "outcome": 50
+  },
+  "transfer_targets": [
+    "deadline management",
+    "team communication"
+  ]
+}

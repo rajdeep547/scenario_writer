@@ -1,26 +1,15 @@
-# Environment variables (contains API key)
-.env
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-
-# Virtual environment
-venv/
-env/
-ENV/
-
-# Test results
-test_results_*.json
-milestone_test_results_*.json
-output_scenario.json
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-
-# OS files
-.DS_Store
-Thumbs.db
+"# Environment variables" 
+".env" 
+"" 
+"# Python" 
+"__pycache__/" 
+"*.pyc" 
+"venv/" 
+"" 
+"# Node" 
+"node_modules/" 
+"frontend/node_modules/" 
+"" 
+"# Test results" 
+"test_results_*.json" 
+"output_scenario.json" 

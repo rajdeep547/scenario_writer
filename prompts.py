@@ -1,66 +1,128 @@
-SYSTEM_PROMPT = """You are an expert scenario writer for a career upskilling platform. 
-Your job: Generate realistic workplace scenarios based on user profiles.
+SYSTEM_PROMPT = """You are an expert scenario writer. Generate DIFFERENT scenarios for DIFFERENT skills.
 
-CRITICAL RULES:
-1. Output ONLY valid JSON - no extra text, no markdown formatting
-2. The `antagonist_opening_line` must be specific, vivid, and create real tension - NOT generic like "I'm unhappy with your work"
-3. The 3 `strategy_chips` must represent MEANINGFULLY DIFFERENT approaches (passive, assertive, collaborative, strategic, etc.)
-4. Each chip's `philosophy` explains WHY that strategy works, not just WHAT to do
-5. `rubric` scores must reflect genuine differences based on scenario difficulty (not all 50s)
-6. For `high_wage`: Technical workplace context, professional characters, software/IT settings
-7. For `low_wage`: Customer service/gig contexts, accessible language, confidence-building scenarios
-8. For `language: "hi"`: Output ALL text fields in Hindi (Devanagari script)
+CRITICAL RULE: The skill_target determines EVERYTHING in the scenario.
 
-Output JSON structure:
+For EACH different skill_target, you MUST create a COMPLETELY DIFFERENT scenario:
+- Different setting
+- Different antagonist line  
+- Different characters
+- Different strategies
+- Different success criteria
+
+If skill_target = "negotiation" → create a salary/contract negotiation scenario
+If skill_target = "public_speaking" → create a presentation/pitch scenario
+If skill_target = "time_management" → create a deadline/priority scenario
+If skill_target = "customer_service" → create a complaint handling scenario
+If skill_target = "technical_writing" → create a documentation scenario
+If skill_target = "leadership" → create a team management scenario
+If skill_target = "conflict_resolution" → create a dispute scenario
+If skill_target = "teamwork" → create a collaboration scenario
+
+Output ONLY valid JSON, no other text.
+
+Output format:
 {
-  "scene": {"setting": "specific location", "time": "time of day/context", "context": "what led to this moment"},
-  "characters": [{"name": "Indian name", "role": "job title", "mood": "emotional state"}],
-  "antagonist_opening_line": "specific, tense dialogue line",
+  "scene": {"setting": "...", "time": "...", "context": "..."},
+  "characters": [{"name": "...", "role": "...", "mood": "..."}],
+  "antagonist_opening_line": "...",
   "strategy_chips": [
-    {"id": "chip1", "label": "short action label", "philosophy": "why this works psychologically/strategically"},
+    {"id": "chip1", "label": "...", "philosophy": "..."},
     {"id": "chip2", "label": "...", "philosophy": "..."},
     {"id": "chip3", "label": "...", "philosophy": "..."}
   ],
-  "success_criteria": ["specific outcome 1", "specific outcome 2", "specific outcome 3"],
+  "success_criteria": ["...", "...", "..."],
   "rubric": {"communication": 0-100, "composure": 0-100, "clarity": 0-100, "strategy": 0-100, "outcome": 0-100},
-  "transfer_targets": ["real-world skill 1", "real-world skill 2"]
+  "transfer_targets": ["...", "..."]
 }"""
 
 def build_user_prompt(icp_type, milestone_code, skill_target, language):
+    # Different instructions based on skill_target
+    skill_specific_instructions = {
+        "negotiation": """
+Create a salary negotiation scenario where the employee must negotiate a raise or promotion.
+Setting: HR office or manager's cabin.
+Antagonist: Manager saying budget is tight.
+Strategies: Prepare market research, highlight achievements, ask for growth path.
+""",
+        "public_speaking": """
+Create a presentation scenario where the employee must present to senior leadership.
+Setting: Conference room with executives.
+Antagonist: Tough audience asking difficult questions.
+Strategies: Practice beforehand, use storytelling, handle Q&A confidently.
+""",
+        "time_management": """
+Create a deadline management scenario with multiple competing priorities.
+Setting: Busy office with urgent tasks.
+Antagonist: Manager adding more work.
+Strategies: Prioritize tasks, delegate, communicate timeline clearly.
+""",
+        "customer_service": """
+Create a customer complaint scenario where a customer is angry.
+Setting: Customer service desk or phone call.
+Antagonist: Angry customer demanding resolution.
+Strategies: Listen actively, apologize sincerely, offer solution.
+""",
+        "technical_writing": """
+Create a documentation scenario where code needs documentation.
+Setting: Software development team.
+Antagonist: Tech lead saying documentation is missing.
+Strategies: Write clearly, use examples, review with team.
+""",
+        "leadership": """
+Create a team motivation scenario where team morale is low.
+Setting: Team meeting room.
+Antagonist: Disengaged team members.
+Strategies: Recognize achievements, set clear goals, provide support.
+""",
+        "conflict_resolution": """
+Create a team conflict scenario between two colleagues.
+Setting: Meeting room with conflicting parties.
+Antagonist: Angry colleague blaming others.
+Strategies: Mediate calmly, find common ground, focus on solutions.
+""",
+        "teamwork": """
+Create a collaboration scenario where team members aren't cooperating.
+Setting: Project workspace.
+Antagonist: Team member not sharing information.
+Strategies: Communicate openly, divide tasks fairly, build trust.
+"""
+    }
+    
+    # Get specific instruction or default
+    skill_lower = skill_target.lower().replace("_", " ").strip()
+    specific_instruction = skill_specific_instructions.get(
+        skill_lower.split()[0] if skill_lower.split() else skill_lower,
+        f"""
+Create a scenario specifically about practicing "{skill_target}".
+The entire scenario must focus on this skill.
+The antagonist line must directly mention needing to improve "{skill_target}".
+The strategies must teach how to master "{skill_target}".
+"""
+    )
+    
     if icp_type == "high_wage":
-        context_guide = """
-CONTEXT: HIGH-WAGE USER (Engineering student → Software Engineer)
-- Setting: Tech office, startup, product team, standup meetings, code review
-- Characters: Tech lead, product manager, senior dev, HR, CEO
-- Tension types: Missed deadlines, technical debt, communication breakdown, feature scope creep
-- Antagonist style: Professional pressure, subtle criticism, team expectations
-"""
+        context = "Tech office, software company, IT professional environment"
+        characters = "Software engineers, tech leads, product managers"
     else:
-        context_guide = """
-CONTEXT: LOW-WAGE USER (Gig worker → Data entry / office job)
-- Setting: Customer support center, small office, training room, team meeting
-- Characters: Supervisor, senior colleague, customer, HR person, team lead
-- Tension types: Customer complaint, performance pressure, learning new software, time management
-- Antagonist style: Direct but not cruel, practical pressure, expectations with support
-"""
+        context = "Customer service center, small office, entry-level workplace"
+        characters = "Supervisors, team leads, customer service representatives"
     
     if language == "hi":
-        lang_instruction = "IMPORTANT: Generate ALL output text in Hindi (Devanagari script). Use proper Hindi vocabulary and sentence structure."
+        lang_text = "Hindi (Devanagari script)"
     else:
-        lang_instruction = "Generate output in English"
+        lang_text = "English"
     
-    return f"""{context_guide}
-{lang_instruction}
+    return f"""
+SKILL TARGET: {skill_target} (THIS IS THE MOST IMPORTANT - Create scenario for THIS SPECIFIC SKILL)
 
-Now generate a scenario with these parameters:
-- ICP Type: {icp_type}
-- Milestone Code: {milestone_code}
-- Skill Target: {skill_target}
+Context: {context}
+Characters: {characters}
+Language: {lang_text}
+Milestone: {milestone_code}
 
-Remember:
-1. antagonist_opening_line must be SPECIFIC (include names, situations, consequences)
-2. Three strategy_chips must be genuinely different from each other
-3. rubric scores must be logical (harder scenarios = lower scores, but not all 50)
-4. For Hindi output, ensure proper Devanagari script
+{specific_instruction}
 
-Output ONLY valid JSON, no other text."""
+IMPORTANT: The scenario MUST be DIFFERENT for each skill_target.
+DO NOT generate the same scenario for different skills.
+
+Generate the scenario JSON now:"""
