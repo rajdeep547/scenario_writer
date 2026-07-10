@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "path": "backend", "name": "Backend (FastAPI)" },
+    { "path": "frontend", "name": "Frontend (React)" }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder:Backend (FastAPI)}/.venv/Scripts/python.exe"
+  }
+}
