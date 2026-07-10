@@ -2,20 +2,6 @@
 
 Generate immersive, skill-based training scenarios powered by Groq AI (Llama 3.3 70B). Supports English and Hindi with difficulty levels M01–M07.
 
-## 🎥 Live Demo
-
-📹 **[Click here to watch the complete demo video](recordings/Recording_2026-07-11_154532.mp4)**
-
-**Features shown in this demo:**
-- ✅ User Registration & Login
-- ✅ AI Scenario Generation
-- ✅ English & Hindi Support
-- ✅ Difficulty Levels M01-M07
-- ✅ History Tracking
-- ✅ JWT Authentication
-
----
-
 ## Features
 
 | Feature | Description |
@@ -53,8 +39,7 @@ AI-scenario-writer/
 │ └── vite.config.js
 ├── .vscode/ # VS Code launch, tasks, settings
 ├── docker-compose.yml # PostgreSQL container
-├── recordings/ # Demo videos
-│ └── Recording_2026-07-11_154532.mp4 # Live demo recording
+├── recordings/ # Demo recordings
 └── README.md
 
 text
